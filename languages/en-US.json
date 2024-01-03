@@ -1,0 +1,70 @@
+{
+    "commands": {
+
+        "analyse": {
+            "security": "Security level",
+            "channels": "Channels where you can spam",
+            "roles": "Mentionable roles",
+            "bots": "Offline robots",
+            "users": "Users with a low score",
+            "title": "Server security analysis",
+            "time": "Analysis time"
+        },
+        "scan": {
+            "avatar": "Avatar",
+            "messages": "Messages",
+            "creation": "Creation date",
+            "database": "Public databases",
+            "title": "User analysis",
+            "time": "Analysis time"
+        },
+        "secure": {
+            "logs": "Automatic adjustment by Analytic's",
+            "security": "Change security level from %s to Medium",
+            "security_error": "Error when changing security level from %s to Medium",
+            "slowmode": "Slow mode added for #%s",
+            "slowmode_error": "when adding a slow mode for #%s",
+            "role": "Fix @%s role",
+            "role_no_perms": "I do not have permission to modify the @%s role",
+            "kick_bots": "Explanation of the inactive bot @%s",
+            "kick_bots_no_perms": "I do not have permission to explode @%s",
+            "title": "Full security",
+            "footer": "Server secured by Analytic's",
+            "id_not_found": "Impossible to find this analytic id",
+            "id_required": "You must specify an identifier"
+        }
+    },
+
+    "classes":{
+        "GuildScanner":{
+            "levels": ["None", "Low", "Medium", "High", "Maximum"],
+            "no_spam": "No channel where spam is possible",
+            "no_roles": "No mentionable role",
+            "no_bots": "No offline bot",
+            "no_users": "No user with a score below 10",
+
+            "security": "Security level",
+            "channels": "Channels where you can spam",
+            "roles": "Mentionable roles",
+            "bots": "Offline robots",
+            "users": "Users with a low score"
+        },
+
+        "UserScanner": {
+            "avatar": "Profile picture",
+            "messages": "Messages",
+            "creation": "Date of creation",
+            "database": "Public database"
+        }
+    },
+
+    "misc": {
+        "loading": "Loading",
+        "no_results": "No results",
+        "suepected": "Suspected",
+        "blacklisted": "Blacklisted",
+        "none": "None",
+        "edited": "Modified",
+        "no_changes": "No change"
+    }
+}

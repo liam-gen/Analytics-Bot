@@ -1,0 +1,69 @@
+{
+    "commands": {
+        "analyse": {
+            "security": "Niveau de sécurité",
+            "channels": "Salons ou on peut spam",
+            "roles": "Rôles mentionnables",
+            "bots": "Robots hors-ligne",
+            "users": "Utilisateurs avec un score bas",
+            "title": "Analyse de la sécurité du serveur",
+            "time": "Durée de l'analyse"
+        },
+        "scan": {
+            "avatar": "Photo de profil",
+            "messages": "Messages",
+            "creation": "Date de création",
+            "database": "Base de données publiques",
+            "title": "Analyse d'utilisateur",
+            "time": "Durée de l'analyse"
+        },
+        "secure": {
+            "logs": "Ajustement automatique par Analytic's",
+            "security": "Changement du niveau de sécurité de %s vers Moyen",
+            "security_error": "Erreur lors du changement du niveau de sécurité de %s vers Moyen",
+            "slowmode": "Ajout d'un mode lent pour #%s",
+            "slowmode_error": "lors de l'ajout d'un mode lent pour #%s",
+            "role": "Correction du rôle @%s",
+            "role_no_perms": "Je n'ai pas la permission de modifier le rôle @%s",
+            "kick_bots": "Explusion du bot innactif @%s",
+            "kick_bots_no_perms": "Je n'ai pas la permission d'expluser @%s",
+            "title": "Sécurisation complète",
+            "footer": "Serveur sécurisé par Analytic's",
+            "id_not_found": "Impossible de trouver cet identifiant d'analyse",
+            "id_required": "Vous devez spécifier un identifiant"
+        }
+    },
+
+    "classes":{
+        "GuildScanner":{
+            "levels": ["Aucun", "Faible", "Moyen", "Elevé", "Maximum"],
+            "no_spam": "Aucun salon où le spam est possible",
+            "no_roles": "Aucun rôle mentionnable",
+            "no_bots": "Aucun bot hors-ligne",
+            "no_users": "Aucun utilisateur avec un score en dessous de 10",
+
+            "security": "Niveau de sécurité",
+            "channels": "Salons ou on peut spam",
+            "roles": "Rôles mentionnables",
+            "bots": "Robots hors-ligne",
+            "users": "Utilisateurs avec un score bas"
+        },
+
+        "UserScanner": {
+            "avatar": "Photo de profil",
+            "messages": "Messages",
+            "creation": "Date de création",
+            "database": "Base de données publiques"
+        }
+    },
+
+    "misc": {
+        "loading": "Chargement",
+        "no_results": "Aucun résultat",
+        "suepected": "Suspecté",
+        "blacklisted": "Blacklisté",
+        "none": "Aucun",
+        "edited":" Modifiée",
+        "no_changes": "Aucun changement"
+    }
+}
