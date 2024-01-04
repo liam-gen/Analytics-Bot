@@ -9,7 +9,7 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('analyse')
 		.setDescription('Analyse la sécurité du serveur')
-        .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator)
+        .setDefaultMemberPermissions(PermissionsBitField.Flags.ModerateMembers)
         .addRoleOption(option =>
             option.setName('member_role')
                 .setNameLocalizations({

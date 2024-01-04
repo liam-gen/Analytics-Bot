@@ -10,7 +10,7 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('scan')
 		.setDescription('User analysis')
-        .setDefaultMemberPermissions(PermissionsBitField.Flags.Administrator)
+        .setDefaultMemberPermissions(PermissionsBitField.Flags.ModerateMembers)
         .setDescriptionLocalizations({
             fr: "Analyser un utilisateur",
         })

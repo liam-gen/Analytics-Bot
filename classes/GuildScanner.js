@@ -33,8 +33,8 @@ class GuildScanner extends BaseScanner{
         return new Promise((res, rej) => {
 
             let channels = this.guild.channels.cache.filter(channel => {
-                const canSpeak = memberRole.permissionsIn(channel).has(PermissionsBitField.Flags.SendMessages);
-                const canView = memberRole.permissionsIn(channel).has(PermissionsBitField.Flags.ViewChannel);
+                const canSpeak = channel.permissionsFor(memberRole).has(PermissionsBitField.Flags.SendMessages);
+                const canView = channel.permissionsFor(memberRole).has(PermissionsBitField.Flags.ViewChannel);
 
                 return channel.type == 0 && channel.rateLimitPerUser == 0 && canSpeak && canView;
             });

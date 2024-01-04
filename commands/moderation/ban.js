@@ -17,6 +17,8 @@ module.exports = {
         let start = Date.now();
         await interaction.deferReply({ ephemeral: true });
 
+        interaction.editReply({content: EmojiManager.get("error")+" Cette commande est encore en cours de création :/"})
+
         /* TODO : Option > Ajouter à la blacklist */
 	},
 };
