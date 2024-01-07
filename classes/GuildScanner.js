@@ -44,8 +44,8 @@ class GuildScanner extends BaseScanner{
                 this.results["channels"] = {name:this.translate.get("channels"), value: this.translate.get("no_spam")+".", points: 5, result: "success", type: "channels", data: {channels: channels}}
             }
             else{
-                this.score -= channels.size;
-                this.results["channels"] = {name:this.translate.get("channels"), value: channels.map(channel => "<#"+channel.id+">").join(", "), points: -channels.size, result: "danger", type: "channels", data: {channels: channels}}
+                this.score -= 0.5 * channels.size;
+                this.results["channels"] = {name:this.translate.get("channels"), value: channels.map(channel => "<#"+channel.id+">").join(", "), points:  0.5 * -channels.size, result: "danger", type: "channels", data: {channels: channels}}
             }
     
             res(this.results["channels"])
@@ -62,8 +62,8 @@ class GuildScanner extends BaseScanner{
                 this.results["roles"] = {name:this.translate.get("roles"), value: this.translate.get("no_roles")+".", points: 5, result: "success", type: "roles", data: {roles: roles}}
             }
             else{
-                this.score -= roles.size;
-                this.results["roles"] = {name:this.translate.get("roles"), value: roles.map(role => "<@&"+role.id+">").join(", "), points: -roles.size, result: "danger", type: "roles", data: {roles: roles}}
+                this.score -= 0.5 * roles.size;
+                this.results["roles"] = {name:this.translate.get("roles"), value: roles.map(role => "<@&"+role.id+">").join(", "), points:  0.5 * -roles.size, result: "danger", type: "roles", data: {roles: roles}}
             }
     
             res(this.results["roles"])
@@ -80,8 +80,8 @@ class GuildScanner extends BaseScanner{
                 this.results["bots"] = {name:this.translate.get("bots"), value:this.translate.get("no_bots")+".", points: 5, result: "success", type: "bots", data: {bots: bots}}
             }
             else{
-                this.score -= bots.size;
-                this.results["bots"] = {name:this.translate.get("bots"), value: bots.map(bot => "<@"+bot.id+">").join(", "), points: -bots.size, result: "warning", type: "bots", data: {bots: bots}}
+                this.score -= 0.5 * bots.size;
+                this.results["bots"] = {name:this.translate.get("bots"), value: bots.map(bot => "<@"+bot.id+">").join(", "), points:  0.5 * -bots.size, result: "warning", type: "bots", data: {bots: bots}}
             }
     
             res(this.results["bots"])

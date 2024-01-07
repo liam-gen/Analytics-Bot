@@ -1,4 +1,4 @@
-require('dotenv').config()
+
 const path = require('path');
 const fs = require('fs');
 const { Client, GatewayIntentBits, Collection, Events, REST, Routes } = require('discord.js');
@@ -41,4 +41,4 @@ for (const file of eventFiles) {
 	}
 }
 
-client.login(process.env.TOKEN);
+client.login(fs.readFileSync(".ENV").replace("TOKEN=", ""));
