@@ -40,5 +40,4 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
-
-client.login(fs.readFileSync(".ENV").replace("TOKEN=", ""));
+client.login(fs.readFileSync(".ENV", "utf-8").replace("TOKEN=", ""));
