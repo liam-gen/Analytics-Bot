@@ -1,7 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder, PermissionsBitField  } = require('discord.js');
 const axios = require('axios');
 const { QuickDB } = require("quick.db");
-const db = new QuickDB({ filePath: "databases/blacklist.sqlite" })
+const db = new QuickDB({ filePath: __dirname+"/../../databases/blacklist.sqlite" })
 const EmojiManager = require("../../classes/EmojiManager")
 const {UserScanner} = require("../../classes/UserScanner")
 const {TranslationManager} = require("../../classes/TranslationManager")
