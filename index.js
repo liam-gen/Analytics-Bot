@@ -1,6 +1,7 @@
 const client = require("./client")
 const path = require('path');
 const fs = require('fs');
+const { Collection } = require('discord.js');
 
 /*process.on('uncaughtException', function(err) {
 	console.log('Caught exception: ' + err);
