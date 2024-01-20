@@ -41,3 +41,5 @@ for (const file of eventFiles) {
 }
 
 client.login(fs.readFileSync(".ENV", "utf-8").replace("TOKEN=", ""));
+
+module.exports = client;
