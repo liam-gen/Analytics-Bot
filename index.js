@@ -1,8 +1,6 @@
-
+const client = require("./client")
 const path = require('path');
 const fs = require('fs');
-const { Client, GatewayIntentBits, Collection, Events, REST, Routes } = require('discord.js');
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildPresences, GatewayIntentBits.GuildMessages] });
 
 /*process.on('uncaughtException', function(err) {
 	console.log('Caught exception: ' + err);
@@ -42,5 +40,3 @@ for (const file of eventFiles) {
 }
 
 client.login(fs.readFileSync(".ENV", "utf-8").replace("TOKEN=", ""));
-
-module.exports = client;
